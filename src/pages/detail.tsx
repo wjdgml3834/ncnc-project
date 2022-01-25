@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Header } from "../components/Detail/Header";
+import { Main } from "../components/Detail/Main";
 
 const Detail: NextPage = () => {
   return (
@@ -11,7 +12,7 @@ const Detail: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <h1>디테일 페이지</h1>
+      <Main />
     </div>
   );
 };
