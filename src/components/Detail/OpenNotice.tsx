@@ -1,6 +1,10 @@
 import styled from "@emotion/styled";
 
-export const OpenNotice = ({ handleBtn }: any) => {
+interface handleBtn {
+  handleBtn: () => void;
+}
+
+export const OpenNotice = ({ handleBtn }: handleBtn) => {
   return (
     <>
       <Description>

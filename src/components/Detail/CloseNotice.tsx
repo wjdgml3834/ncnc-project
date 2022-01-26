@@ -1,6 +1,10 @@
 import styled from "@emotion/styled";
 
-export const CloseNotice = ({ handleBtn }: any) => {
+interface handleBtn {
+  handleBtn: () => void;
+}
+
+export const CloseNotice = ({ handleBtn }: handleBtn) => {
   return (
     <>
       <Text>구매하신 상품은 반드시 유효기간 내에 사용해주셔야 합니다.</Text>
