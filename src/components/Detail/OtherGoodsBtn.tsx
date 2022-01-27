@@ -13,6 +13,6 @@ const Btn = styled.button`
   font-size: 9px;
   font-weight: 600;
   line-height: 10px;
-  margin-left: 6px;
   margin-top: 62px;
+  margin-bottom: 32px;
 `;

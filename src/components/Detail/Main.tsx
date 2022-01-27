@@ -3,6 +3,7 @@ import { Card } from "../Card";
 import { NoticeToggle } from "./NoticeToggle";
 import { RefundToggle } from "./RefundToggle";
 import { OtherGoodsBtn } from "./OtherGoodsBtn";
+import { MiniCard } from "./MiniCard";
 
 export const Main = () => {
   return (
@@ -13,6 +14,14 @@ export const Main = () => {
         <NoticeToggle />
         <RefundToggle />
         <OtherGoodsBtn />
+        <MiniCardCont>
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+          <MiniCard />
+        </MiniCardCont>
       </ContentCont>
     </MainContainer>
   );
@@ -27,4 +36,12 @@ const MainContainer = styled.main`
 
 const ContentCont = styled.div`
   margin: 0 auto;
+  max-width: 341px;
+  padding: 0px 29px;
+`;
+
+const MiniCardCont = styled.section`
+  display: flex;
+  overflow: hidden;
+  gap: 5px;
 `;

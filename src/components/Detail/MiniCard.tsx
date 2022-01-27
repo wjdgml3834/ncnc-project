@@ -30,10 +30,10 @@ export const MiniCard = () => {
 const MiniCardCont = styled.button`
   position: relative;
   margin: 0 auto;
-  width: 111px;
   height: 169px;
   border-radius: 5px;
   border: 2px solid #f5f5f5;
+  min-width: 111px;
 `;
 
 const ContentCont = styled.div`
