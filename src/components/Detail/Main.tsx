@@ -2,14 +2,18 @@ import styled from "@emotion/styled";
 import { Card } from "../Card";
 import { NoticeToggle } from "./NoticeToggle";
 import { RefundToggle } from "./RefundToggle";
+import { OtherGoodsBtn } from "./OtherGoodsBtn";
 
 export const Main = () => {
   return (
     <MainContainer>
       <h2 className="sr-only">상품 상세 페이지</h2>
       <Card />
-      <NoticeToggle />
-      <RefundToggle />
+      <ContentCont>
+        <NoticeToggle />
+        <RefundToggle />
+        <OtherGoodsBtn />
+      </ContentCont>
     </MainContainer>
   );
 };
@@ -19,4 +23,8 @@ const MainContainer = styled.main`
   flex-direction: column;
   height: calc(100vh - 130px);
   margin: 0px auto;
+`;
+
+const ContentCont = styled.div`
+  margin: 0 auto;
 `;
