@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import { Card } from "../Card";
 import { NoticeToggle } from "./NoticeToggle";
+import { RefundToggle } from "./RefundToggle";
 
 export const Main = () => {
   return (
@@ -8,6 +9,7 @@ export const Main = () => {
       <h2 className="sr-only">상품 상세 페이지</h2>
       <Card />
       <NoticeToggle />
+      <RefundToggle />
     </MainContainer>
   );
 };
