@@ -1,18 +1,12 @@
 import styled from "@emotion/styled";
 import Image from "next/image";
-import latte from "../../images/starbucks-latte.png";
+import { Goods } from "../../types/Goods";
 
-export const MiniCard = () => {
-  const goodsData = {
-    id: 1,
-    image: latte,
-    category: "스타벅스",
-    name: "카페라떼",
-    discountRate: "15%",
-    sellingPrice: "4,230원",
-    originalPrice: "5,000원",
-  };
+interface GoodsProps {
+  goodsData: Goods;
+}
 
+export const MiniCard = ({ goodsData }: GoodsProps) => {
   return (
     <MiniCardCont>
       <h3 className="sr-only">다른 상품 카드</h3>
