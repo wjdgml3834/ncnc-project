@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import Image from "next/image";
 import latte from "../images/starbucks-latte.png";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 
 export const Card = () => {
   const goodsData = {
@@ -15,11 +16,12 @@ export const Card = () => {
     originalPrice: "5,000원",
   };
 
-  const [likeBtnColor, setLikeBtnColor] = useState("LikeBtn-outlined-icon");
+  const [heartOn, setHeartOn] = useState(false);
+
   const handleLikeBtn = () => {
-    if (likeBtnColor === "LikeBtn-outlined-icon") {
-      setLikeBtnColor("LikeBtn-filled-icon");
-    } else setLikeBtnColor("LikeBtn-outlined-icon");
+    if (heartOn) {
+      setHeartOn((heartOn) => !heartOn);
+    } else setHeartOn((heartOn) => !heartOn);
   };
 
   return (
@@ -37,7 +39,11 @@ export const Card = () => {
           </PriceCont>
           <LikeBtn onClick={handleLikeBtn}>
             <span className="sr-only">관심상품 버튼</span>
-            <FavoriteBorderOutlinedIcon className={likeBtnColor} />
+            {heartOn ? (
+              <FavoriteIcon className="LikeBtn-filled-icon" />
+            ) : (
+              <FavoriteBorderOutlinedIcon className="LikeBtn-outlined-icon" />
+            )}
           </LikeBtn>
         </Info>
       </CardCont>
