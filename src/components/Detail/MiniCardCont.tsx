@@ -1,17 +1,18 @@
 import styled from "@emotion/styled";
 import { MiniCard } from "./MiniCard";
 import latte from "../../images/starbucks-latte.png";
+import americano from "../../images/starbucks-americano.png";
 
 export const MiniCardCont = () => {
   const goodsDatas = [
     {
       id: 1,
-      image: latte,
+      image: americano,
       category: "스타벅스",
-      name: "카페라떼",
-      discountRate: "15%",
-      sellingPrice: "4,230원",
-      originalPrice: "5,000원",
+      name: "아메리카노",
+      discountRate: "19%",
+      sellingPrice: "4,130원",
+      originalPrice: "4,900원",
     },
     {
       id: 2,
@@ -19,17 +20,17 @@ export const MiniCardCont = () => {
       category: "스타벅스",
       name: "카페라떼",
       discountRate: "15%",
-      sellingPrice: "4,230원",
+      sellingPrice: "4,280원",
       originalPrice: "5,000원",
     },
     {
       id: 3,
-      image: latte,
+      image: americano,
       category: "스타벅스",
-      name: "카페라떼",
-      discountRate: "15%",
-      sellingPrice: "4,230원",
-      originalPrice: "5,000원",
+      name: "아메리카노",
+      discountRate: "21%",
+      sellingPrice: "4,030원",
+      originalPrice: "4,900원",
     },
   ];
   return (

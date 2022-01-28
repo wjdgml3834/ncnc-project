@@ -11,7 +11,7 @@ export const MiniCard = ({ goodsData }: GoodsProps) => {
     <MiniCardCont>
       <h3 className="sr-only">다른 상품 카드</h3>
       <ContentCont>
-        <Image src={goodsData.image} alt="상품 이미지" className="image" />
+        <Image src={goodsData.image} alt="상품 이미지" />
         <NameTxt>{goodsData.name}</NameTxt>
         <DiscountRate>{goodsData.discountRate}</DiscountRate>
         <SellingPrice>{goodsData.sellingPrice}</SellingPrice>
