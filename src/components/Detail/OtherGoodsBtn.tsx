@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const OtherGoodsBtn = () => {
-  return <Btn>판매자의 다른 상품</Btn>;
+  return <Btn>이 브랜드의 다른 상품</Btn>;
 };
 
 const Btn = styled.button`
