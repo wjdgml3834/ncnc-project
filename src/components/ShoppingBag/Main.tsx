@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { ShoppingCard } from "./ShoppingCard";
+import { Btn } from "./AddBtn";
 
 export const Main = () => {
   return (
@@ -8,17 +9,7 @@ export const Main = () => {
       <ShoppingCard />
       <ShoppingCard />
       <ShoppingCard />
-      <AddBtn>+ 상품추가</AddBtn>
+      <Btn />
     </>
   );
 };
-
-const AddBtn = styled.button`
-  width: 100%;
-  background-color: #ff5757;
-  border-radius: 3px;
-  color: #ffff;
-  font-size: 15px;
-  margin: 0 auto;
-  margin-top: 10px;
-`;
