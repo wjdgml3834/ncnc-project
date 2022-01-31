@@ -19,7 +19,7 @@ const AddBtnCont = styled.div`
 const AddBtn = styled.button`
   width: 200px;
   height: 50px;
-  background-color: #ff5757;
+  background-color: gray;
   border-radius: 3px;
   color: #ffff;
   font-size: 15px;
